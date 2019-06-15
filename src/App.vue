@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <hello></hello>
+    <!--<hello></hello>-->
+    <testForcuizhi></testForcuizhi>
   </div>
 </template>
 <script>
 import hello from 'components/HelloWorld'
+import testForcuizhi from 'components/testForCuizhijuzhong.vue'
+import float from 'components/testForFloat.vue'
 export default {
   name: 'app',
   data(){
@@ -13,7 +16,9 @@ export default {
     }
   },
   components: {
-      hello
+      hello,
+      testForcuizhi,
+      float
   },
   computed:{
 
@@ -27,6 +32,10 @@ export default {
 }
 </script>
 <style lang="stylus">
+  *{
+    margin  0
+    padding :0
+  }
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
